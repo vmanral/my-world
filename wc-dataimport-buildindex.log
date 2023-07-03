@@ -1,0 +1,1110 @@
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain main(String[])
+FINER: ENTRY
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logStartDate(Date)
+FINER: ENTRY 7/3/23 5:01 PM
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getLocalizedMessage(String, Object[])
+FINER: ENTRY _INFO_DI_BUILDINDEX_START_TIME [Ljava.lang.Object;@6970c218
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getLocalizedMessage(String, Object[])
+FINER: RETURN Data import process started:
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logStartDate(Date)
+INFO: Data import process started:Mon Jul 03 17:01:54 AEST 2023
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logStartDate(Date)
+FINER: RETURN
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain validateArguments(String[])
+FINER: ENTRY
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINER: ENTRY
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -instance argument value: ucolsitstg
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -masterCatalogId argument value: 10001
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -dbuser argument value: wcsowner
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -dbuserpwd argument value: ******
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -localename argument value: en_US
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -searchuser argument value: wcsadmin
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -searchuserpwd argument value: ******
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -solrConnTimeout argument value: 10000
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -soTimeout argument value: 30000
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINE: argument name: -indexType argument value: InStoreRange
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain processOption(String[])
+FINER: RETURN
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.util.DBConnectionUtil isToolkit
+FINER: ENTRY
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.util.DBConnectionUtil isToolkit
+FINER: RETURN null
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getParameterValue
+FINER: ENTRY -runCategoryRules
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getParameterValue
+FINER: RETURN null
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getParameterValue
+FINER: ENTRY -numOfLangsParallel
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getParameterValue
+FINER: RETURN null
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain validateArguments(String[])
+FINER: RETURN true
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain init(String, String, String)
+FINER: ENTRY /app/WebSphere/CommerceServer/instances/ucolsitstg/xml/ucolsitstg.xml wcsowner
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: ENTRY
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: RETURN true
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.util.DBConnectionUtil isToolkit
+FINER: ENTRY
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.util.DBConnectionUtil isToolkit
+FINER: RETURN null
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.preprocess.config.WcServerXML parseDBAttributes(Document, boolean)
+FINER: ENTRY
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.preprocess.config.WcServerXML parseDBAttributes(Document, boolean)
+FINE: dbHost: utecommdb10.cmltd.net.au dbServerPort: 60004 dbType: DB2 dbName: TZCSH00 dbSchemaWCSOWNER
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.preprocess.config.WcServerXML parseDBAttributes(Document, boolean)
+FINE: jdbcDriverLocation: /app/db2/V11.1/java/db2jcc4.jar;/app/db2/V11.1/java/db2jcc_license_cu.jarjdbcDriverType: native
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.preprocess.config.WcServerXML parseDBAttributes(Document, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain init(String, String, String)
+FINE: db host: utecommdb10.cmltd.net.au db name: TZCSH00 db schema name: WCSOWNER db type: DB2 db server port: 60004 jdbc driver location: /app/db2/V11.1/java/db2jcc4.jar;/app/db2/V11.1/java/db2jcc_license_cu.jar jddb driver type: native dbURL : null
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager getDatabaseConnection(boolean, Map)
+FINER: ENTRY true
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINER: ENTRY true
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINE: dbType=DB2;dbHost=utecommdb10.cmltd.net.au;dbServerPort=60004;dbName=TZCSH00;dbUser=wcsowner;dbPassword=********;dbSchemaName=WCSOWNER;dbURL=null
+Jul 03, 2023 5:01:54 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINE: Connection spec: [utecommdb10.cmltd.net.au:60004/TZCSH00]
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINE: Connection acquired; pre-connection diagnostics:
+20230703-170154| AllDBConnector.version> AllDBConnector version 8.0 (20151015)
+20230703-170154| AllDBConnector.readXML> Attempting to read configuration from XML: [/app/WebSphere/CommerceServer/xml/config/alldbconnector.xml]
+20230703-170154| ConnectData.fill> Building descriptor for database type: [DB2]
+20230703-170154| ConnectData.fillLogOutput> Ignored disabled logoutput: <logoutput enabled="no" value="g:\db2-db-connections.log"> ... 
+20230703-170154| ConnectData.fillProperty> Ignored disabled property: [property3] with value: [value_for_property3]
+20230703-170154| ConnectData.fillProperty> Ignored disabled property: [keepAliveTimeout] with value: [1]
+20230703-170154| ConnectData.fillProperty> Ignored disabled property: [enableSysplexWLB] with value: [true]
+20230703-170154| ConnectData.fillProperty> Ignored disabled property: [enableAlternateServerListFirstConnect] with value: [true]
+20230703-170154| ConnectData.fillProperty> Ignored disabled property: [clientRerouteAlternateServerName] with value: [host1,host2]
+20230703-170154| ConnectData.fillProperty> Ignored disabled property: [clientRerouteAlternatePortNumber] with value: [50000,50000]
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="mall"> ... 
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="brisktea"> ... 
+20230703-170154| ConnectData.fill> Saved data: [9] child-elements.
+20230703-170154| ConnectData.fill> Building descriptor for database type: [Oracle]
+20230703-170154| ConnectData.fillDriverType> Ignored disabled drivertype: <drivertype enabled="no" value="oci"> ... 
+20230703-170154| ConnectData.fillProperty> Stored property: [oracle.jdbc.J2EE13Compliant] with value: [true]
+20230703-170154| ConnectData.fillProperty> Stored property: [oracle.jdbc.autoCommitSpecCompliant] with value: [false]
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="cert" includeusers="wcs,wcsaux"> ... 
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" excludeusers="wcs" identifier="cert"> ... 
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="wcs"> ... 
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="orcl"> ... 
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="orclextsec"> ... 
+20230703-170154| ConnectData.fill> Saved data: [8] child-elements.
+20230703-170154| ConnectData.fill> Building descriptor for database type: [Derby]
+20230703-170154| ConnectData.fill> Saved data: [0] child-elements.
+20230703-170154| ConnectData.fill> Building descriptor for database type: [iSeries (native)]
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="T10EA08E"> ... 
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="local_auth"> ... 
+20230703-170154| ConnectData.fill> Saved data: [2] child-elements.
+20230703-170154| ConnectData.fill> Building descriptor for database type: [iSeries (toolbox)]
+20230703-170154| ConnectData.fillURL> Ignored disabled jdbcurl: <jdbcurl enabled="no" value="jdbc:as400://server"> ... 
+20230703-170154| ConnectData.fillProperty> Stored property: [prompt] with value: [false]
+20230703-170154| ConnectData.fillOverride> Ignored disabled override: <override enabled="no" identifier="something_esoteric"> ... 
+20230703-170154| ConnectData.fill> Saved data: [3] child-elements.
+20230703-170154| AllDBConnector.mergeProperties> No override found for: [utecommdb10.cmltd.net.au:60004/TZCSH00]; using database descriptor instead
+20230703-170154| AllDBConnector.connectOrFail> Called by: com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager.getDatabaseConnection
+20230703-170154| AllDBConnector.connect> Determined database-type from input: [DB2] as: [DB2]
+20230703-170154| AllDBConnector.connectDb2> Attempting to load DB2 JDBC driver: [com.ibm.db2.jcc.DB2Driver]
+20230703-170154| AllDBConnector.connectDb2> Attempting to acquire DB2 Connection using URL: [jdbc:db2://utecommdb10.cmltd.net.au:60004/TZCSH00]
+20230703-170155| AllDBConnector.connectOrFail> Connection acquired
+20230703-170155| --
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager setSchema(Connection, String, String, boolean)
+FINER: ENTRY com.ibm.db2.jcc.t4.b@d02bcdc4 WCSOWNER DB2 true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager execute(Connection, String, boolean)
+FINER: ENTRY com.ibm.db2.jcc.t4.b@d02bcdc4 set current schema WCSOWNER true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager execute(Connection, String, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager setSchema(Connection, String, String, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager getDatabaseConnection(boolean, Map)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager getNewDatabaseConnection(final boolean bJ2SE, final Map<String, String> dbProperties)
+FINER: ENTRY true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINER: ENTRY true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINE: dbType=DB2;dbHost=utecommdb10.cmltd.net.au;dbServerPort=60004;dbName=TZCSH00;dbUser=wcsowner;dbPassword=********;dbSchemaName=WCSOWNER;dbURL=null
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINE: Connection spec: [utecommdb10.cmltd.net.au:60004/TZCSH00]
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINE: Connection acquired; pre-connection diagnostics:
+20230703-170155| AllDBConnector.mergeProperties> No override found for: [utecommdb10.cmltd.net.au:60004/TZCSH00]; using database descriptor instead
+20230703-170155| AllDBConnector.connectOrFail> Called by: com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager.getNewDatabaseConnection
+20230703-170155| AllDBConnector.connect> Determined database-type from input: [DB2] as: [DB2]
+20230703-170155| AllDBConnector.connectDb2> Attempting to load DB2 JDBC driver: [com.ibm.db2.jcc.DB2Driver]
+20230703-170155| AllDBConnector.connectDb2> Attempting to acquire DB2 Connection using URL: [jdbc:db2://utecommdb10.cmltd.net.au:60004/TZCSH00]
+20230703-170155| AllDBConnector.connectOrFail> Connection acquired
+20230703-170155| --
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager setSchema(Connection, String, String, boolean)
+FINER: ENTRY com.ibm.db2.jcc.t4.b@b188003e WCSOWNER DB2 true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager execute(Connection, String, boolean)
+FINER: ENTRY com.ibm.db2.jcc.t4.b@b188003e set current schema WCSOWNER true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager execute(Connection, String, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager setSchema(Connection, String, String, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager openConnection(Map, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager getNewDatabaseConnection(final boolean bJ2SE, final Map<String, String> dbProperties)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain init(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain validateInputArgumentValue()
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain validateInputArgumentValue()
+FINE: cloudscape: false
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain validateInputArgumentValue()
+FINE: dbtype: DB2
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper isMasterCatalogId(String masterCatalogId, Connection dbConn)
+FINER: ENTRY 10001
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper getTemplateSQL(String)
+FINER: ENTRY SELECT_MASTER_CATALOG_FROM_STORCAT_BY_MC_ID_AND_MC_FLAG
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper getTemplateSQL(String)
+FINER: RETURN select sc.catalog_id from storecat sc where sc.catalog_id = ? and sc.mastercatalog='1'
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper doesObjectExist(String sql, List parameters, Connection dbConn)
+FINER: ENTRY select sc.catalog_id from storecat sc where sc.catalog_id = ? and sc.mastercatalog='1' [10001] com.ibm.db2.jcc.t4.b@d02bcdc4
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper doesObjectExist(String sql, List parameters, Connection dbConn)
+FINER: ENTRY true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper isMasterCatalogId(String masterCatalogId, Connection dbConn)
+FINER: RETURN true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain validateInputArgumentValue()
+FINER: RETURN true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper getActionList(String indexType, Long masterCatalogId, Connection dbConn)
+FINER: ENTRY InStoreRange 10,001
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper getActionList(String indexType, Long masterCatalogId, Connection dbConn)
+FINE: no sql found
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper getActionList(String indexType, Long masterCatalogId, Connection dbConn)
+FINER: RETURN []
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper isPerformingSearchIndex(Set)
+FINER: ENTRY []
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper isPerformingSearchIndex(Set)
+FINER: RETURN true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.util.DBConnectionUtil isToolkit
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.util.DBConnectionUtil isToolkit
+FINER: RETURN null
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain buildSearchConfigsInJ2SE(String, String, boolean)
+FINER: ENTRY null InStoreRange true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain buildSearchConfigsInJ2SE(String, String, boolean)
+FINE: indexType: InStoreRange indexScope: 10001 localeName: en_US
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: RETURN true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: en_US            languageId: -1
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: fr_FR            languageId: -2
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: de_DE            languageId: -3
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: it_IT            languageId: -4
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: es_ES            languageId: -5
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: pt_BR            languageId: -6
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: zh_CN            languageId: -7
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: zh_TW            languageId: -8
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ko_KR            languageId: -9
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ja_JP            languageId: -10
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ru_RU            languageId: -20
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ro_RO            languageId: -21
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: pl_PL            languageId: -22
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ar_EG            languageId: -23
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration loadSearchConfigurationsFromSrchconfext()
+FINER: ENTRY InStoreRange 10001 en_US
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration loadSearchConfigurationsFromSrchconfext()
+FINE: get config info for en_US
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: RETURN true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration loadSearchConfigurationsFromSrchconfext()
+FINER: RETURN 0
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain buildSearchConfigsInJ2SE(String, String, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain main(String[])
+FINE: no record in srchconfext table.
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain buildSearchConfigsInJ2SE(String, String, boolean)
+FINER: ENTRY null InStoreRange false
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain buildSearchConfigsInJ2SE(String, String, boolean)
+FINE: indexType: InStoreRange indexScope: 10001 localeName: en_US
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSearchConfigByDB(HashMap<String, String>)
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: RETURN true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: en_US            languageId: -1
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: fr_FR            languageId: -2
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: de_DE            languageId: -3
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: it_IT            languageId: -4
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: es_ES            languageId: -5
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: pt_BR            languageId: -6
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: zh_CN            languageId: -7
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: zh_TW            languageId: -8
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ko_KR            languageId: -9
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ja_JP            languageId: -10
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ru_RU            languageId: -20
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ro_RO            languageId: -21
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: pl_PL            languageId: -22
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINE: locale: ar_EG            languageId: -23
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.LanguagesMap loadLanguageConfigurations()
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration loadSearchConfigurations()
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseLanguage(String)
+FINER: ENTRY -1
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseLanguage(String)
+FINER: RETURN [-1]
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseConfiguration(String)
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseConfiguration(String)
+FINER: RETURN {PreProcessConfigDirectory=/app/WebSphere/CommerceServer/instances/ucolsitstg/search/pre-processConfig/MC_10001/DB2, SearchServerName=ltecommweb11.cmltd.net.au, SearchServerPort=27910, IndexScopeTag=0}
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseLanguage(String)
+FINER: ENTRY -1
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseLanguage(String)
+FINER: RETURN [-1]
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseConfiguration(String)
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseConfiguration(String)
+FINER: RETURN {PreProcessConfigDirectory=/app/WebSphere/CommerceServer/instances/ucolsitstg/search/pre-processConfig/MC_10001/DB2/CatalogGroup, SearchServerName=ltecommweb11.cmltd.net.au, SearchServerPort=27910, IndexScopeTag=1}
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseLanguage(String)
+FINER: ENTRY -1
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseLanguage(String)
+FINER: RETURN [-1]
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseConfiguration(String)
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration parseConfiguration(String)
+FINER: RETURN {SearchServerName=ltecommweb11.cmltd.net.au, SearchServerPort=27910, IndexScopeTag=2}
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.preprocess.config.util.DataImportPreProcessConfigHelper isJ2SE
+FINER: RETURN true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration loadSearchConfigurations()
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSearchConfigByDB(HashMap<String, String>)
+FINE: indexType: InStoreRangeindexScope: 10001
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSearchConfigByDB(HashMap<String, String>)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain buildSearchConfigsInJ2SE(String, String, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getParameterValue
+FINER: ENTRY -numOfLangsParallel
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getParameterValue
+FINER: RETURN null
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration toString()
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration toString()
+FINER: RETURN indextype=InStoreRange<SEPERATOR>indexscope=10001<SEPERATOR>languages=en_US,<SEPERATOR>languageIds=-1,<SEPERATOR>config=SearchServerName=ltecommweb11.cmltd.net.au,SearchServerPort=27910,IndexScopeTag=2
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration toString()
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.SearchConfiguration toString()
+FINER: RETURN indextype=InStoreRange<SEPERATOR>indexscope=10001<SEPERATOR>languages=en_US,<SEPERATOR>languageIds=-1,<SEPERATOR>config=SearchServerName=ltecommweb11.cmltd.net.au,SearchServerPort=27910,IndexScopeTag=2
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINER: ENTRY [indextype=InStoreRange<SEPERATOR>indexscope=10001<SEPERATOR>languages=en_US,<SEPERATOR>languageIds=-1,<SEPERATOR>config=SearchServerName=ltecommweb11.cmltd.net.au,SearchServerPort=27910,IndexScopeTag=2] full-import en_US 10,000
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH
+INFO: The Solr server is ltecommweb11.cmltd.net.au, the port is 27910.
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINE: indexType: InStoreRange indexSubTypes: null Locale:en_US
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINE: needs build Structured: true
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINE: needs build WebContent: false
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINE: needs build Unstructured: false
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINE: needs build Extension: false
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain createCoreName(String, String, String)
+FINER: ENTRY en_US InStoreRange 10001
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain createCoreName(String, String, String)
+FINER: RETURN MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain mergeCores(String[][], String[][])
+FINER: ENTRY [[Ljava.lang.String;@dbdf7ea null
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain mergeCores(String[][], String[][])
+FINER: RETURN
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH
+INFO: Solr server core MC_10001_InStoreRange_en_US status is initialized.
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINE: validate index after build: false
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport (String[][], String[][], String[][], Long, String)
+FINER: ENTRY null [[Ljava.lang.String;@dbdf7ea null 10,000
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain nonWebcontentDataImport(String[][], Long)
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:01:55 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:01:56 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:01:56 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:01:56 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US full-import false
+Jul 03, 2023 5:01:56 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:01:56 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {}
+Jul 03, 2023 5:01:56 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:01:56 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain nonWebcontentDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is action: full-import started.
+Jul 03, 2023 5:01:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain nonWebcontentDataImport(String[][], Long)
+FINER: RETURN
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@9ffa4fb4 false 0 10,000
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:0:10.594, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:0:10.594, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:02:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@fdc6166 false 0 10,000
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:0:20.635, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:0:20.635, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:02:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@d2c5010b false 0 10,000
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:0:30.704, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:0:30.704, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:02:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@872ea0a8 false 0 10,000
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:0:40.755, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:0:40.755, Total Requests made to DataSource=1, Total Rows Fetched=0, Total Documents Processed=0, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:02:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@e3058fb5 false 0 10,000
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:0:50.812, Total Requests made to DataSource=1, Total Rows Fetched=7000, Total Documents Processed=7000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:0:50.812, Total Requests made to DataSource=1, Total Rows Fetched=7000, Total Documents Processed=7000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:02:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@ed97e8cf false 0 10,000
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:1:0.840, Total Requests made to DataSource=1, Total Rows Fetched=28000, Total Documents Processed=28000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:1:0.840, Total Requests made to DataSource=1, Total Rows Fetched=28000, Total Documents Processed=28000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:02:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@7072df6b false 0 10,000
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:1:10.867, Total Requests made to DataSource=1, Total Rows Fetched=47500, Total Documents Processed=47500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:1:10.867, Total Requests made to DataSource=1, Total Rows Fetched=47500, Total Documents Processed=47500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:03:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@a4b54b53 false 0 10,000
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:1:20.895, Total Requests made to DataSource=1, Total Rows Fetched=63500, Total Documents Processed=63500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:1:20.895, Total Requests made to DataSource=1, Total Rows Fetched=63500, Total Documents Processed=63500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:03:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@6dbd7110 false 0 10,000
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:1:30.927, Total Requests made to DataSource=1, Total Rows Fetched=76500, Total Documents Processed=76500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=1},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:1:30.927, Total Requests made to DataSource=1, Total Rows Fetched=76500, Total Documents Processed=76500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:03:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@2496a001 false 0 10,000
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:1:40.976, Total Requests made to DataSource=1, Total Rows Fetched=89197, Total Documents Processed=89196, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:1:40.976, Total Requests made to DataSource=1, Total Rows Fetched=89197, Total Documents Processed=89196, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:03:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@e5a3985 false 0 10,000
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:1:51.41, Total Requests made to DataSource=1, Total Rows Fetched=103309, Total Documents Processed=103308, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:1:51.41, Total Requests made to DataSource=1, Total Rows Fetched=103309, Total Documents Processed=103308, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:03:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@d73441f0 false 0 10,000
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:2:1.70, Total Requests made to DataSource=1, Total Rows Fetched=117500, Total Documents Processed=117500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=1},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:2:1.70, Total Requests made to DataSource=1, Total Rows Fetched=117500, Total Documents Processed=117500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:03:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@83bda21 false 0 10,000
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:2:11.103, Total Requests made to DataSource=1, Total Rows Fetched=131000, Total Documents Processed=131000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:2:11.103, Total Requests made to DataSource=1, Total Rows Fetched=131000, Total Documents Processed=131000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:04:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@c3ddaf97 false 0 10,000
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:2:21.131, Total Requests made to DataSource=1, Total Rows Fetched=141500, Total Documents Processed=141500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=1},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:2:21.131, Total Requests made to DataSource=1, Total Rows Fetched=141500, Total Documents Processed=141500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:04:17 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@5fc5bdb3 false 0 10,000
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:2:31.164, Total Requests made to DataSource=1, Total Rows Fetched=153264, Total Documents Processed=153263, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:2:31.164, Total Requests made to DataSource=1, Total Rows Fetched=153264, Total Documents Processed=153263, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:04:27 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@9341ac7b false 0 10,000
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:2:41.212, Total Requests made to DataSource=1, Total Rows Fetched=171500, Total Documents Processed=171500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:2:41.212, Total Requests made to DataSource=1, Total Rows Fetched=171500, Total Documents Processed=171500, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:04:37 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@4cf7950 false 0 10,000
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:2:51.239, Total Requests made to DataSource=1, Total Rows Fetched=198000, Total Documents Processed=198000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:2:51.239, Total Requests made to DataSource=1, Total Rows Fetched=198000, Total Documents Processed=198000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:04:47 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@288e1315 false 0 10,000
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Time Elapsed=0:3:1.264, Total Requests made to DataSource=1, Total Rows Fetched=206000, Total Documents Processed=206000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=busy,importResponse=A command is still running...,statusMessages={Time Elapsed=0:3:1.264, Total Requests made to DataSource=1, Total Rows Fetched=206000, Total Documents Processed=206000, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56}}.
+Jul 03, 2023 5:04:57 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 MC_10001_InStoreRange_en_US
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910 {-solrConnTimeout=10000, -soTimeout=30000}
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: ENTRY ltecommweb11.cmltd.net.au 27910
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: ENTRY
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil getUrlPrefix()
+FINER: RETURN urlPrefix:http://
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil toServerUrl(String,String)
+FINER: RETURN serverUrl:http://ltecommweb11.cmltd.net.au:27910/solr/
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil createSolrServer(String, String, Map)
+FINER: RETURN
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain getSolrServer(String, String, String)
+FINER: RETURN
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: ENTRY MC_10001_InStoreRange_en_US status org.apache.solr.client.solrj.impl.HttpSolrServer@ee94b36d false 0 10,000
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: ENTRY MC_10001_InStoreRange_en_US status false
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: url: /MC_10001_InStoreRange_en_US/dataimport
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINE: status message: {Total Requests made to DataSource=1, Total Rows Fetched=208605, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56, =Indexing completed. Added/Updated: 208605 documents. Deleted 0 documents., Committed=2023-07-03 17:05:04, Total Documents Processed=208605, Time taken=0:3:7.746}
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean)
+FINER: RETURN
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.util.SolrUtil makeDataImportCommand(String, String, SolrServer, boolean, int, Long)
+FINER: RETURN
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: Solr server core MC_10001_InStoreRange_en_US status is {responseHeader={status=0,QTime=0},status=idle,importResponse=,statusMessages={Total Requests made to DataSource=1, Total Rows Fetched=208605, Total Documents Skipped=0, Full Dump Started=2023-07-03 17:01:56, =Indexing completed. Added/Updated: 208605 documents. Deleted 0 documents., Committed=2023-07-03 17:05:04, Total Documents Processed=208605, Time taken=0:3:7.746}}.
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport
+INFO: 
+
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain fullDataImport (String[][], String[][], String[][], Long, String)
+FINER: RETURN
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain executeDIH (List<SearchConfiguration>, String, String, Long)
+FINER: RETURN {}
+Jul 03, 2023 5:05:07 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: ENTRY WCT+SRCHATTR+?
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: ENTRY WCT+CATGROUP+?
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: ENTRY WCT+CATGRPDESC+?
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: ENTRY WCT+CATGRPREL+?
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain registerCacheInvalidation(String)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain restartCacheInvalidation(Long)
+FINER: ENTRY 1,688,367,714,359
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain restartCacheInvalidation(Long)
+FINE: Replay cache invalidation starting from 2023/07/03 17:01:44
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain restartCacheInvalidation(Long)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain main(String[])
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper deleteFromDeltaTable(Set, Long, Long, Connection)
+FINER: ENTRY [InStoreRange] 10,001 -1
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper deleteFromDeltaTable(Set, Long, Long, Connection)
+FINE: no sql found
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper deleteFromDeltaTable(Set, Long, Long, Connection)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportDatabaseHelper deleteFromDeltaTable(Set, Long, Long, Connection)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logExitCode(int)
+FINER: ENTRY 0
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getLocalizedMessage(String, Object[])
+FINER: ENTRY _INFO_DI_BUILDINDEX_EXIT_SUCCESS [Ljava.lang.Object;@5bbbe5a5
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getLocalizedMessage(String, Object[])
+FINER: RETURN Data import process completed successfully with no errors.
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logExitCode
+INFO: 
+
+-----------------------------------------------
+
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logExitCode(int)
+INFO: 
+The program exiting with exit code: 0. 
+Data import process completed successfully with no errors.
+
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logExitCode
+INFO: 
+-----------------------------------------------
+
+
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logExitCode(int)
+FINER: RETURN
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logEndDateAndTime(long)
+FINER: ENTRY 1,688,367,714,359
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getLocalizedMessage(String, Object[])
+FINER: ENTRY _INFO_DI_BUILDINDEX_END_TIME [Ljava.lang.Object;@16efc439
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper getLocalizedMessage(String, Object[])
+FINER: RETURN Data import process ended:
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logEndDateAndTime
+INFO: Data import process ended:Mon Jul 03 17:05:08 AEST 2023
+Jul 03, 2023 5:05:08 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper convertMillisecondsToSeconds
+FINER: ENTRY 194,575
+Jul 03, 2023 5:05:09 PM com.ibm.commerce.foundation.dataimport.util.DataImportHelper convertMillisecondsToSeconds
+FINER: RETURN 194.575
+Jul 03, 2023 5:05:09 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logEndDateAndTime
+INFO: Data import process completed in 194.575 seconds.
+Jul 03, 2023 5:05:09 PM com.ibm.commerce.foundation.dataimport.process.DataImportProcessorMain logEndDateAndTime(long)
+FINER: RETURN 194,575
+Jul 03, 2023 5:05:09 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager closeConnection()
+FINER: ENTRY
+Jul 03, 2023 5:05:09 PM com.ibm.commerce.foundation.dataimport.util.DatabaseConnectionManager closeConnection()
+FINER: RETURN
