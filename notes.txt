@@ -1,0 +1,82 @@
+Azure Monitor:
+	Azure Monitor maximises the availability and performance of your applications and services by delivering a comprehensive solution for collecting, analysing, and acting on telemetry from your cloud and on-premises environments. It helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on.
+	
+Azure Log Analytics Workspace:
+	With Azure Monitor Log Analytics you can easily store, retain and query data collected from your monitored resources in Azure and other environments for valuable insights.
+	A Log Analytics workspace is the logical storage unit where your log data is collected and stored.
+	A Log Analytics workspace is the basic management unit of Log Analytics.
+	A Log Analytics Workspace is an Azure resource and a container where data is collected, aggregated, and serves as an administrative boundary.
+	Each workspace will have its own repository consisting of multiple tables. 
+
+**********************************
+
+Azure Monitor Agent:
+	https://learn.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview
+
+Prerequisites:
+	https://learn.microsoft.com/en-us/azure/azure-arc/servers/prerequisites
+
+Install Azure Monitor Agent:
+	https://learn.microsoft.com/en-us/azure/azure-arc/servers/deployment-options
+		https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-portal
+			This method requires that you have administrator permissions on the machine to install and configure the agent. On Linux, by using the root account, and on Windows, you are member of the Local Administrators group.
+
+To install on Windows, perform the following steps:
+----------------------------------------------------
+1. From your browser, sign in to the Azure portal.
+2. On the Servers - Azure Arc page, select Add at the upper left.
+3. On the Select a method page, under the Add a single server tile, and then select Generate script.
+4. On the Prerequisites page, review the information and then select Next to Resource details page.	
+	i. The server requires access to port 443 and a set of outbound URLs for the Azure Arc agent to properly function.
+	   View outbound URLs: https://learn.microsoft.com/en-gb/azure/azure-arc/servers/network-requirements?tabs=azure-cloud#urls	
+	ii. Local administrator permission 
+		Onboarding will require local administrator permission on the server.
+	iii. Connectivity method
+		You can connect to the internet over a public endpoint, through a proxy server, or over a private endpoint. An Azure Arc Private link scope is required to connect over a private endpoint.
+
+5. Download the installation script and execute it
+	This script will do the following:
+	i. Download the agent from the Microsoft Download Center.
+	ii. Install the agent on the server.
+	iii. Create the Azure Arc-enabled server resource and associate it with the agent.
+
+	Once the onboarding script is complete, you will be able to see the Azure Arc resource from the Azure portal page.
+
+To install on Linux:
+-------------------
+# Download the installation package.
+wget https://aka.ms/azcmagent -O ~/Install_linux_azcmagent.sh
+
+# Install the AZure Connected Machine agent.
+bash ~/Install_linux_azcmagent.sh --proxy "{proxy-url}:{proxy-port}"
+
+After installing the agent, you need to configure it to communicate with the Azure Arc service by running the following command:
+
+azcmagent connect --resource-group "resourceGroupName" --tenant-id "tenantID" --location "regionName" --subscription-id "subscriptionID" --cloud "cloudName"
+if [ $? = 0 ]; then echo "\033[33mTo view your onboarded server(s), navigate to https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.HybridCompute%2Fmachines\033[m"; fi
+
+Or alternatively install the agent using the script downloaded from the Azure portal (like done for Windows).
+
+Create Azure Application Insights and Log Analytics Workspace:
+-------------------------------------------------------------
+Create in Australia East region
+Refer: myloganalytics-aue
+
+Create a new table in the Log Analytics Workspace for the intended log.
+Refer: PreprocessorlogAM_CL
+
+In the Azure portal, select Log Analytics workspaces > your workspace > Tables.
+Select Create and then New custom log (MMA-based).
+
+Create Data Collection Rule:
+---------------------------
+Create a data collection rule: https://learn.microsoft.com/en-us/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent#create-a-data-collection-rule
+
+This process creates the rule, associates it to the selected resources, and installs Azure Monitor Agent on them if it's not already installed.
+
+Go to Monitor --> Data Collection Rules --> Create
+Refer: Preprocess-Rule
+
+If the Agent is successfully installed on a machine, it also reflects under:
+	Log Analytics workspace --> Agents
+
